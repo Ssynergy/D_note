@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Planning"
+    android:orientation="vertical">
+    <!-- date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/today_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘날짜"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+    <!-- 시간 계획 체크 표시-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/layer_under_line"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="시간"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#005090" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="계획"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <!-- list_view 있을자리  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5시~6시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="6시~7시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="7시~8시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <EditText
+                    android:id="@+id/editText_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="8시~9시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="9시~10시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="10시~11시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="11시~12시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="12시~13시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="13시~14시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="14시~15시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="15시~16시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_eleven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="16시~17시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twelve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="17시~18시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_thirteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="18시~19시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editText_fourteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="19시~20시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="20시~21시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_sixteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="21시~22시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_seventeen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="22시~23시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_eighteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="23시~24시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_nineteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0시~1시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1시~2시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twentyone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2시~3시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twentytwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3시~4시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twentythree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4시~5시"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editText_twentyfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="저장하기"
+                android:textSize="30sp"
+                android:onClick='mOnClick'/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

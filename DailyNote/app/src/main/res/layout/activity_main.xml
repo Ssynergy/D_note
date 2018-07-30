@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- main screen -->
+    <LinearLayout
+        android:id="@+id/main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- title bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layer_under_line"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10.4">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@color/colorPrimary"/>
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_menu2"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.2"
+                android:background="@color/colorPrimary"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:src="@drawable/icon_title2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:background="@color/colorPrimary"/>
+
+            <ImageButton
+                android:id="@+id/btn_calendar"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="0.9"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_calendar2"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <!-- calendar -->
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"></CalendarView>
+
+        <!-- date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/today_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘날짜"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <!-- 시간 계획 체크 표시-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layer_under_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="시간"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="#005090" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:hint="계획"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="#005090" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="체크"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <!-- list_view 있을자리  -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="08~09"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextone"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="09~10"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTexttwo"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="10~11"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTextthree"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="11~12"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTextfour"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="12~13"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTextfive"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="13~14"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextsix"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="15~16"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextseven"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="16~17"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexteight"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="17~18"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextnine"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="18~19"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextten"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="19~20"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexteleven"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="20~21"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwelve"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="21~22"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTextthirteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="22~23"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+
+                <EditText
+                    android:id="@+id/editTextfourteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="23~24"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextfifteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="24~00"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextsixteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00~01"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextseventeen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="01~02"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexteighteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="02~03"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTextnineteen"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="03~04"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwenty"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="04~05"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwentyone"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="05~06"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwentytwo"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="06~07"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwentythree"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/layer_under_line"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="07~08"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <EditText
+                    android:id="@+id/editTexttwentyfour"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="#005090" />
+                <CheckBox
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+        <!--<TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold" />-->
+        <!--<ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="multipleChoice">
+
+        </ListView>-->
+
+        <!--<TextView
+            android:id="@+id/tmptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+
+    </LinearLayout>
+
+
+
+    <!-- drawer -->
+
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_lookback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="일주일돌아보기"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="지난일정"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="도움말"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <!-- fab
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        android:src="@drawable/icon_plus"
+
+  /> -->
+
+    <Button
+        android:id="@+id/button_finishday"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/circle_border"
+        android:onClick="mOnClick"
+        />
+
+
+
+</FrameLayout>
