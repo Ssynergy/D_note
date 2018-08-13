@@ -29,11 +29,11 @@ public class Planning extends AppCompatActivity {
     EditText editone, edittwo, editthree, editfour, editfive, editsix, editseven, editeight, editnine, editten, editeleven, edittwelve, editthirteen,
             editfourteen, editfifteen, editsixteen, editseventeen, editeightteen, editnineteen, edittwenty, edittwentyone, edittwentytwo, edittwentythree,
             edittwentyfour;
-    EditText edtone, edttwo, edtthree, edtfour, edtfive, edtsix, edtseven, edteight, edtnine, edtten, edteleven, edttwelve, edtthirteen,
+   /* EditText edtone, edttwo, edtthree, edtfour, edtfive, edtsix, edtseven, edteight, edtnine, edtten, edteleven, edttwelve, edtthirteen,
             edtfourteen, edtfifteen, edtsixteen, edtseventeen, edteightteen, edtnineteen, edttwenty, edttwentyone, edttwentytwo, edttwentythree,
-            edttwentyfour;
+            edttwentyfour;*/
     Button btnAddData;
-    Button btnNext;
+  /*  Button btnNext;*/
     SQLiteDatabase sqlDB;
 
 
@@ -80,28 +80,28 @@ public class Planning extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), "저장되었습니다.", 1000).show();
                 sqlDB = myHelper.getWritableDatabase();
                 sqlDB.execSQL("INSERT INTO groupTBL VALUES ('"
-                        + editone.getText().toString() + "' , "
-                        + edittwo.getText().toString() + "' , "
-                        + editthree.getText().toString() + "' , "
-                        + editfour.getText().toString() + "' , "
-                        + editfive.getText().toString() + "' , "
-                        + editsix.getText().toString() + "' , "
-                        + editseven.getText().toString() + "' , "
-                        + editeight.getText().toString() + "' , "
-                        + editnine.getText().toString() + "' , "
-                        + editten.getText().toString() + "' , "
-                        + editeleven.getText().toString() + "' , "
-                        + edittwelve.getText().toString() + "' , "
-                        + editthirteen.getText().toString() + "' , "
-                        + editfourteen.getText().toString() + "' , "
-                        + editfifteen.getText().toString() + "' , "
-                        + editsixteen.getText().toString() + "' , "
-                        + editseventeen.getText().toString() + "' , "
-                        + editeightteen.getText().toString() + "' , "
-                        + editnineteen.getText().toString() + "' , "
-                        + edittwenty.getText().toString() + "' , "
-                        + edittwentyone.getText().toString() + "' , "
-                        + edittwentytwo.getText().toString() + "' , "
+                        + editone.getText().toString() + "' , '"
+                        + edittwo.getText().toString() + "' , '"
+                        + editthree.getText().toString() + "' , '"
+                        + editfour.getText().toString() + "' , '"
+                        + editfive.getText().toString() + "' , '"
+                        + editsix.getText().toString() + "' , '"
+                        + editseven.getText().toString() + "' , '"
+                        + editeight.getText().toString() + "' , '"
+                        + editnine.getText().toString() + "' , '"
+                        + editten.getText().toString() + "' , '"
+                        + editeleven.getText().toString() + "' , '"
+                        + edittwelve.getText().toString() + "' , '"
+                        + editthirteen.getText().toString() + "' , '"
+                        + editfourteen.getText().toString() + "' ,'"
+                        + editfifteen.getText().toString() + "' , '"
+                        + editsixteen.getText().toString() + "' , '"
+                        + editseventeen.getText().toString() + "' , '"
+                        + editeightteen.getText().toString() + "' , '"
+                        + editnineteen.getText().toString() + "' , '"
+                        + edittwenty.getText().toString() + "' , '"
+                        + edittwentyone.getText().toString() + "' , '"
+                        + edittwentytwo.getText().toString() + "' , '"
                         + edittwentythree.getText().toString() + "' , "
                         + edittwentyfour.getText().toString() + ");");
                 sqlDB.close();
