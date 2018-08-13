@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 public class StartingActivity extends AppCompatActivity {
 
-
     ViewPager vp;
 
 

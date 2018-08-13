@@ -2,7 +2,7 @@ package com.example.a.dailynote;
 
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-class pagerAdapter extends FragmentStatePagerAdapter
+public class pagerAdapter extends FragmentStatePagerAdapter
 {
     public pagerAdapter(android.support.v4.app.FragmentManager fm)
     {

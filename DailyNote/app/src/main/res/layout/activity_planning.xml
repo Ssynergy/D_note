@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Planning"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Planning">
     <!-- date -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,13 +22,14 @@
             android:textColor="#ffffff" />
     </LinearLayout>
 
-
     <!-- 시간 계획 체크 표시-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/layer_under_line"
         android:orientation="horizontal">
+        //android:background="@drawable/layer_under_line"
+
         <TextView
             android:layout_width="74dp"
             android:layout_height="wrap_content"
@@ -36,11 +37,13 @@
             android:padding="10dp"
             android:text="시간"
             android:textSize="15dp" />
+
         <View
             android:layout_width="1dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:background="#005090" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,11 +65,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+                //android:background="@drawable/layer_under_line"
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -80,11 +86,10 @@
                     android:layout_centerInParent="true"
                     android:background="#005090" />
                 <EditText
-                    android:id="@+id/editText_one"
+                    android:id="@+id/editText_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -92,6 +97,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+                /android:background="@drawable/layer_under_line"
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -99,20 +105,16 @@
                     android:text="6시~7시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
-
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
-
-
                 <EditText
-                    android:id="@+id/editText_two"
+                    android:id="@+id/editText_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
-
 
 
             </LinearLayout>
@@ -138,7 +140,7 @@
                     android:background="#005090" />
 
                 <EditText
-                    android:id="@+id/editText_eight"
+                    android:id="@+id/editText_3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
@@ -168,11 +170,10 @@
 
 
                 <EditText
-                    android:id="@+id/editText_three"
+                    android:id="@+id/editText_4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
-
 
 
             </LinearLayout>
@@ -199,11 +200,10 @@
 
 
                 <EditText
-                    android:id="@+id/editText_four"
+                    android:id="@+id/editText_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
-
 
 
             </LinearLayout>
@@ -230,11 +230,10 @@
 
 
                 <EditText
-                    android:id="@+id/editText_five"
+                    android:id="@+id/editText_6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
-
 
 
             </LinearLayout>
@@ -252,13 +251,15 @@
                     android:text="11시~12시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_six"
+                    android:id="@+id/editText_7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
@@ -277,13 +278,15 @@
                     android:text="12시~13시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_seven"
+                    android:id="@+id/editText_8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
@@ -294,6 +297,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -301,13 +305,15 @@
                     android:text="13시~14시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_nine"
+                    android:id="@+id/editText_9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
@@ -326,22 +332,26 @@
                     android:text="14시~15시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_ten"
+                    android:id="@+id/editText_10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -349,13 +359,15 @@
                     android:text="15시~16시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_eleven"
+                    android:id="@+id/editText_11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
@@ -367,6 +379,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -374,23 +387,27 @@
                     android:text="16시~17시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twelve"
+                    android:id="@+id/editText_12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -398,6 +415,7 @@
                     android:text="17시~18시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
@@ -406,14 +424,14 @@
 
 
                 <EditText
-                    android:id="@+id/editText_thirteen"
+                    android:id="@+id/editText_13"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
 
 
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -436,19 +454,20 @@
 
 
                 <EditText
-                    android:id="@+id/editText_fourteen"
+                    android:id="@+id/editText_14"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
 
 
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -456,18 +475,21 @@
                     android:text="19시~20시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_fifteen"
+                    android:id="@+id/editText_15"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -481,22 +503,26 @@
                     android:text="20시~21시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_sixteen"
+                    android:id="@+id/editText_16"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -504,22 +530,26 @@
                     android:text="21시~22시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_seventeen"
+                    android:id="@+id/editText_17"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -527,22 +557,26 @@
                     android:text="22시~23시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_eighteen"
+                    android:id="@+id/editText_18"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -550,22 +584,26 @@
                     android:text="23시~24시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_nineteen"
+                    android:id="@+id/editText_19"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -573,22 +611,26 @@
                     android:text="0시~1시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twenty"
+                    android:id="@+id/editText_20"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -596,22 +638,26 @@
                     android:text="1시~2시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twentyone"
+                    android:id="@+id/editText_21"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -619,22 +665,26 @@
                     android:text="2시~3시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twentytwo"
+                    android:id="@+id/editText_22"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -642,22 +692,26 @@
                     android:text="3시~4시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twentythree"
+                    android:id="@+id/editText_23"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layer_under_line"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="74dp"
                     android:layout_height="wrap_content"
@@ -665,24 +719,27 @@
                     android:text="4시~5시"
                     android:textAlignment="center"
                     android:textSize="11sp" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     android:background="#005090" />
+
                 <EditText
-                    android:id="@+id/editText_twentyfour"
+                    android:id="@+id/editText_24"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15sp" />
             </LinearLayout>
+
             <Button
-                android:id="@+id/btn_save"
+                android:id="@+id/btn_insert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/layer_under_line"
                 android:text="저장하기"
-                android:textSize="30sp"
-                android:onClick='mOnClick'/>
+                android:textSize="30sp" />
         </LinearLayout>
 
     </ScrollView>
